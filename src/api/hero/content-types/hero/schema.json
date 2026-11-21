@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroes",
+  "info": {
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "Hero",
+    "description": "Doomsday: Last Survivors heroes across Infantry, Ranged, Rider, and Support squads"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "squad": {
+      "type": "enumeration",
+      "enum": [
+        "infantry",
+        "ranged",
+        "rider",
+        "support",
+        "general"
+      ],
+      "required": true,
+      "default": "general"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "leader",
+        "assistant",
+        "general"
+      ],
+      "default": "general"
+    },
+    "tier": {
+      "type": "string"
+    },
+    "rarity": {
+      "type": "enumeration",
+      "enum": [
+        "legendary",
+        "elite",
+        "uncommon",
+        "common"
+      ],
+      "default": "legendary"
+    },
+    "source": {
+      "type": "string"
+    },
+    "spec": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer",
+      "default": 1
+    },
+    "stars": {
+      "type": "integer",
+      "default": 1
+    },
+    "tags": {
+      "type": "json"
+    },
+    "note": {
+      "type": "json"
+    },
+    "stats": {
+      "type": "json"
+    },
+    "perks": {
+      "type": "json"
+    },
+    "skills": {
+      "type": "json"
+    },
+    "transcend": {
+      "type": "json"
+    }
+  }
+}

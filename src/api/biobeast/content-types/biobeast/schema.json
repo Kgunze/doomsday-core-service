@@ -1,0 +1,134 @@
+{
+  "kind": "collectionType",
+  "collectionName": "biobeasts",
+  "info": {
+    "singularName": "biobeast",
+    "pluralName": "biobeasts",
+    "displayName": "Biobeast",
+    "description": "Biochemical Beasts (Water, Fire, Physical) for Doomsday: Last Survivors guides and combinator"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "beastId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "element": {
+      "type": "enumeration",
+      "enum": [
+        "Water",
+        "Fire",
+        "Physical"
+      ],
+      "required": true
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "any",
+        "field",
+        "rally",
+        "garrison"
+      ],
+      "default": "any"
+    },
+    "mechanic": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "hp": {
+      "type": "integer",
+      "default": 0
+    },
+    "atk": {
+      "type": "integer",
+      "default": 0
+    },
+    "def": {
+      "type": "integer",
+      "default": 0
+    },
+    "combo": {
+      "type": "integer",
+      "default": 0
+    },
+    "comboDmg": {
+      "type": "float",
+      "default": 0
+    },
+    "crit": {
+      "type": "integer",
+      "default": 0
+    },
+    "critDmg": {
+      "type": "float",
+      "default": 0
+    },
+    "counter": {
+      "type": "integer",
+      "default": 0
+    },
+    "counterDmg": {
+      "type": "float",
+      "default": 0
+    },
+    "elemRed": {
+      "type": "float",
+      "default": 0
+    },
+    "squadRed": {
+      "type": "float",
+      "default": 0
+    },
+    "squadBasicAtk": {
+      "type": "float",
+      "default": 0
+    },
+    "squadSkillDmg": {
+      "type": "float",
+      "default": 0
+    },
+    "squadSkillRed": {
+      "type": "float",
+      "default": 0
+    },
+    "leaderMult": {
+      "type": "float",
+      "default": 0
+    },
+    "activeMult": {
+      "type": "float",
+      "default": 0
+    },
+    "sup": {
+      "type": "json"
+    },
+    "stats": {
+      "type": "json"
+    },
+    "skills": {
+      "type": "json"
+    },
+    "pairings": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Database
+.tmp/
+*.db
+*.sqlite
+
+# Strapi build & runtime artifacts
+dist/
+build/
+.cache/
+.strapi/
+.strapi-updater.json
+
+# Uploads
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Logs & OS / Editor files
+*.log
+npm-debug.log*
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "troop_tiers",
+  "info": {
+    "singularName": "troop-tier",
+    "pluralName": "troop-tiers",
+    "displayName": "Troop Tier",
+    "description": "T1 to T6 troop tier stats for Infantry, Ranged, and Rider barracks"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tierCode": {
+      "type": "string",
+      "required": true
+    },
+    "squad": {
+      "type": "enumeration",
+      "enum": [
+        "infantry",
+        "ranged",
+        "rider"
+      ],
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "atk": {
+      "type": "json"
+    },
+    "def": {
+      "type": "json"
+    },
+    "hp": {
+      "type": "json"
+    },
+    "spd": {
+      "type": "json"
+    },
+    "load": {
+      "type": "integer"
+    },
+    "might": {
+      "type": "integer"
+    },
+    "img": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "json"
+    }
+  }
+}

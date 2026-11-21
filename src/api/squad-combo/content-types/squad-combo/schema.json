@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "squad_combos",
+  "info": {
+    "singularName": "squad-combo",
+    "pluralName": "squad-combos",
+    "displayName": "Squad Combo",
+    "description": "Recommended Hero pairs and Hero + Biobeast Combinator presets"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "comboId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "squad": {
+      "type": "enumeration",
+      "enum": [
+        "infantry",
+        "ranged",
+        "rider",
+        "mixed"
+      ],
+      "required": true
+    },
+    "kind": {
+      "type": "enumeration",
+      "enum": [
+        "hero-pair",
+        "combinator-preset"
+      ],
+      "default": "hero-pair"
+    },
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "any",
+        "field",
+        "rally",
+        "garrison"
+      ],
+      "default": "any"
+    },
+    "leaderHeroId": {
+      "type": "string",
+      "required": true
+    },
+    "assistantHeroId": {
+      "type": "string",
+      "required": true
+    },
+    "leaderBeastId": {
+      "type": "string"
+    },
+    "supportBeastId": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}
